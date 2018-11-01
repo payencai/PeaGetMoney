@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mine.activity.ManapwdActivity">
+    <include layout="@layout/pea_top"></include>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/tv_333"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="密码管理"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_modPwd"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:textColor="@color/tv_333"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:text="修改密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>、
+        <ImageView
+
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/me_btn_sanjiaohei"
+            android:layout_height="13dp"
+            android:layout_width="8dp"></ImageView>
+    </RelativeLayout>
+    <View
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <RelativeLayout
+        android:id="@+id/rl_forgetPwd"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:textColor="@color/tv_333"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:text="忘记密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/me_btn_sanjiaohei"
+            android:layout_height="13dp"
+            android:layout_width="8dp"></ImageView>
+    </RelativeLayout>
+    <View
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+</LinearLayout>

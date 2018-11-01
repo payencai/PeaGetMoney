@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".account.activity.LoginActivity">
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginTop="60dp"
+            android:src="@mipmap/login_logo"
+            android:layout_width="65dp"
+            android:layout_height="65dp"/>
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/tv_green"
+            android:text="豌豆收银"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/login_phone"
+            android:maxLength="11"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColorHint="@color/ccc"
+            android:hint="请输入手机号"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+         <View
+             android:layout_marginTop="5dp"
+             android:layout_marginRight="20dp"
+             android:layout_marginLeft="20dp"
+             android:background="@color/line"
+             android:layout_width="match_parent"
+             android:layout_height="1dp"></View>
+        <EditText
+            android:id="@+id/login_pwd"
+            android:maxLength="32"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColorHint="@color/ccc"
+            android:hint="请输入密码"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+        <RelativeLayout
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:elevation="1dp"
+                android:layout_centerInParent="true"
+                android:text="滑动登录"
+                android:textColor="@color/tv_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ng.max.slideview.SlideView
+
+                android:background="@mipmap/login_bg"
+                android:id="@+id/slideView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:sv_buttonBackgroundColor="@color/tv_green"
+                app:sv_buttonImage="@mipmap/slide"
+                app:sv_slideBackgroundColor="@color/white"
+                app:sv_slideText=""
+                app:sv_strokeColor="@color/tv_green"
+                app:sv_slideTextColor="@color/tv_green" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/register"
+                    android:text="用户注册"
+                    android:textColor="@color/tv_333"
+                    android:textSize="14sp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/forget"
+                    android:layout_toRightOf="@id/register"
+                    android:text="忘记密码"
+                    android:textColor="@color/tv_333"
+                    android:textSize="14sp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

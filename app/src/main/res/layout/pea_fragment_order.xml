@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:background="@color/f8"
+             android:layout_height="match_parent"
+             tools:context=".order.fragment.OrderFragment">
+
+
+    <TextView
+
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="@color/tv_333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单"/>
+    <ImageView
+        android:id="@+id/date"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/date"
+        android:layout_width="15dp"
+        android:layout_height="13dp"/>
+    <View
+        android:id="@+id/line"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/date"
+        android:background="@color/E5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_below="@id/line"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/empty"
+            android:layout_width="55dp"
+            android:layout_height="70dp"/>
+        <TextView
+            android:textColor="@color/tv_333"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="今日无订单"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--文字颜色-->
+    <color name="alpha">#00000000</color>
+    <color name="tv_green">#21BD01</color>
+    <color name="tv_999">#999999</color>
+    <color name="tv_666">#666666</color>
+    <color name="white">#ffffff</color>
+    <color name="ccc">#cccccc</color>
+    <color name="tv_333">#333333</color>
+    <color name="tv_red">#D0021B</color>
+    <color name="E5">#e5e5e5</color>
+    <color name="f8">#f8f8f8</color>
+    <color name="f9">#f9f9f9</color>
+    <color name="line">#EEEEEE</color>
+    <color name="tv_97">#979797</color>
+    <!--背景颜色-->
+    <color name="red_dot">#D0021B</color>
+    <color name="grey">#979797</color>
+    <color name="c7">#FF7C1E</color>
+</resources>

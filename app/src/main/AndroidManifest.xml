@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.yichan.pea">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <application
+        android:name=".MyAPP"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyAppTheme">
+        <activity android:name=".home.activity.MainActivity">
+        </activity>
+        <activity android:name=".account.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".account.activity.RegisterActivity">
+        </activity>
+        <activity android:name=".account.activity.FindpwdActivity">
+        </activity>
+        <activity android:name=".account.activity.UpdatepwdActivity">
+        </activity>
+        <activity android:name=".account.activity.ForgetpwdActivity">
+        </activity>
+        <activity android:name=".home.activity.SellerenterActivity">
+        </activity>
+        <activity android:name=".mine.activity.ManapwdActivity">
+        </activity>
+        <activity android:name=".mine.activity.SettingActivity">
+        </activity>
+        <activity android:name=".mine.activity.AboutActivity">
+        </activity>
+        <activity android:name=".mine.activity.UserinfoActivity">
+        </activity>
+        <activity android:name=".home.activity.NotifyActivity">
+        </activity>
+        <activity android:name=".home.activity.SellerinfoActivity">
+        </activity>
+        <activity android:name=".home.activity.SuggActivity">
+        </activity>
+        <activity
+            android:name=".home.activity.selfshop.SelfFirstActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+        <activity
+            android:name=".home.activity.nolicense.NoFirstActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+        <activity
+            android:name=".home.activity.enterprise.EnterpriseFirstActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+        <activity
+            android:name=".home.activity.selfshop.SelfSecActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+        <activity
+            android:name=".home.activity.nolicense.NoSecActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+        <activity
+            android:name=".home.activity.enterprise.EnterpriseSecActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+        <activity
+            android:name=".home.activity.nolicense.NoThirdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+        <activity
+            android:name=".home.activity.enterprise.EnterpriseThirdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+        <activity android:name=".home.activity.BrandActivity">
+        </activity>
+        <activity android:name=".home.activity.InteriorActivity">
+        </activity>
+        <activity android:name=".home.activity.LicenseActivity">
+        </activity>
+        <activity android:name=".home.activity.IdcardActivity">
+        </activity>
+        <activity android:name=".order.activity.OrderQueryActivity">
+        </activity>
+    </application>
+
+</manifest>

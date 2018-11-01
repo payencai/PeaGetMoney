@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/top_left"
+        android:layout_width="50dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@mipmap/pea_back"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/top_title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="我是标题"
+        android:textColor="@color/tv_333"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/top_right"
+        android:visibility="gone"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="下一步"
+        android:textColor="@color/tv_green"
+        android:textSize="14sp"/>
+</RelativeLayout>
